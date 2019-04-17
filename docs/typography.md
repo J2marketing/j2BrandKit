@@ -5,7 +5,7 @@ title: Typography
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
 ## Typography
@@ -55,7 +55,7 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 
 **HTML**
 
-<pre><code class="language-html">&lt;link href="http://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css"&gt;</code></pre>
+<pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css"&gt;</code></pre>
 
 **JS IMPORT**
 
