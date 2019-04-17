@@ -240,7 +240,7 @@ These lists are for listing groups of fonts used in the brand kit. They work sim
 Adding a font table to the markdown looks like this:
 
 ```md
-{@fontTable: Open-Sans,Normal,300&Open-Sans,Italic,300&Open-Sans,Normal,400&Open-Sans,Italic,400&Open-Sans,Normal,600&Open-Sans,Italic,600&Open-Sans,Normal,700&Open-Sans,Italic,700&Open-Sans,Normal,800&Open-Sans,Italic,800}
+{@fontTable: Open-Sans,Normal,300|Open-Sans,Italic,300|Open-Sans,Normal,400|Open-Sans,Italic,400|Open-Sans,Normal,600|Open-Sans,Italic,600|Open-Sans,Normal,700|Open-Sans,Italic,700|Open-Sans,Normal,800|Open-Sans,Italic,800}
 ```
 
 This would generate a table containing every weight of open sans in the normal and italic styles.
@@ -248,7 +248,7 @@ This would generate a table containing every weight of open sans in the normal a
 A breakdown of the input:
 
 The font table can accept as many fonts as are fed into it. Each individual font row must look like this: **fontname,fontstyle,fontweight**
-And if you are displaying more than one font variation in a table the input must be seperated by & and would look like this: **fontname,fontstyle,fontweight&&fontname,fontstyle,fontweight**
+And if you are displaying more than one font variation in a table the input must be seperated by | and would look like this: **fontname,fontstyle,fontweight|fontname,fontstyle,fontweight**
 
 Note the following important info as you set up a font table:
 
@@ -256,13 +256,12 @@ Note the following important info as you set up a font table:
 - If you only need to display one variation, its OK to just put one input into the module.
 - The font name (if more than one word) must be seperated with dashes - NOT SPACES
 - Each attribute of the font must be seperated by commas, NOT SPACES
-- Font tables can accept INFINITE inputs. Each color group of fontname,fontstyle,fontweight must be seperated with the & character.
+- Font tables can accept infinite inputs. Each color group of fontname,fontstyle,fontweight must be seperated with the | character.
+- If your font has a dash in the actual name, use the unicode character for dash &#45;
 
 ##### Other important info about font tables.
 
 **Including font files:**
-
-If your font has a dash in the actual name, use the unicode character for dash &#45;
 
 You will be mainly using these to display google fonts. The reference to the google font MUST be included at the top of the typography MD file for these to work correctly.
 You must go to google fonts, select the font you want to use, go to the customize tab, select all variations, and then copy the HTML ref link from that box and paste it to the head of the typography page.
