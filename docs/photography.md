@@ -5,7 +5,7 @@ title: Photography
 
 ## Basic Principles
 
-### Visual Style
+## Visual Style
 
 Since we pull images from a large bank of photographers, always encourage photographers to follow the following basic principles:
 
