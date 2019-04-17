@@ -211,7 +211,7 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer noPaddingTop">
+        <div className="mainContainer noPadding">
           <Features />
           <FeatureCallout />
           {/*<LearnHow />*/}
