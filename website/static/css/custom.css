@@ -75,8 +75,28 @@ a {
   font-size: 30px;
 }
 
-.homeContainer {
+.homeContainer,
+.usersSection {
   background-image: url("../img/memphis-colorful.png");
+}
+
+/*customizations for do's and donts*/
+/*recode this to be less hacky*/
+.descriptionText.dos {
+  display: inline;
+  color: #222;
+  background-image: linear-gradient(#fff 45%, #c1ffd4 35%);
+}
+.descriptionText.donts {
+  display: inline;
+  color: #222;
+  background-image: linear-gradient(#fff 45%, #ffa8a0 35%);
+}
+
+.dosDonts {
+  text-align: center;
+  line-height: 2em;
+  margin-bottom: 15px;
 }
 
 .infoPage a {
@@ -98,6 +118,7 @@ a {
 .descriptionText {
   color: #999;
   text-align: center;
+  margin-top: 10px;
 }
 .centeredText {
   text-align: center;
@@ -127,6 +148,10 @@ a {
 }
 .usersSection {
   padding-top: 10vh;
+}
+
+.noPaddingTop {
+  padding-top: 0px;
 }
 
 .image {

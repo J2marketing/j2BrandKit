@@ -1,11 +1,12 @@
 ## J2 Marketing Brand Kit
+
 Welcome! This is a work in progress copy of the J2 brand kit system. Built on <a href="https://docusaurus.io/">Docusaurus</a> and expanded with some additional functionality.
 
 For a demo, visit <a href="https://j2BrandKit.netlify.com/">this link.</a>
 
 ### Instructions for J2 content writers:
 
-All brand-kit pages are written in markdown, and they are pretty simple to edit, though some simple HTML must be used at times. 
+All brand-kit pages are written in markdown, and they are pretty simple to edit, though some simple HTML must be used at times. IMPORTANT NOTE: The html examples in this file are all formatted correctly for easy readability. If you are copy-pasting from this readme. Remove the line breaks and spaces between tags.
 
 ### Images
 
@@ -13,12 +14,13 @@ Below is a reference for including images in markdown.
 
 #### Including a fullwidth image:
 
-Simply add the image to the static/img/ directory, and then copy the code below and replace the filename with your filename. 
+Simply add the image to the static/img/ directory, and then copy the code below and replace the filename with your filename.
 You can also use pure markdown syntax to add the images.
 
 HTML:
+
 ```html
-<img src="../img/yourpicnamehere.jpg">
+<img src="../img/yourpicnamehere.jpg" />
 ```
 
 #### Making an image downloadable
@@ -26,8 +28,9 @@ HTML:
 All that must be done to make an image downloadable is adding class="downloadable" right after the html image tag.
 
 HTML:
+
 ```html
-<img class="downloadable" src="../img/yourpicnamehere.jpg">
+<img class="downloadable" src="../img/yourpicnamehere.jpg" />
 ```
 
 ### Description Texts
@@ -36,7 +39,7 @@ Below is a reference for including either light description text below an image,
 
 #### Adding description text to an element.
 
-This is for adding informative text below images, blurbs, etc. 
+This is for adding informative text below images, blurbs, etc.
 
 Place the following line of code below whatever you want to caption.
 
@@ -56,44 +59,125 @@ Place the following line of code below whatever you want to add a title to. If y
 
 ### Content Layouts and Columns
 
-Below are a couple column layouts for dividing content into 2 or 4 columns. 
+Below are a couple column layouts for dividing content into 2 or 4 columns.
 
 #### Adding columns for multiple pieces of content/images per row.
 
 Adding columns is pretty simple, copy the code from the box below for your desired amount of columns, then replace each columns content with your own.
 
 Two Columns:
+
 ```html
 <div class="row">
-<div class="halfWidth">Your Content or Image</div>
-<div class="halfWidth">Your Content or Image 2</div>
+  <div class="halfWidth">Your Content or Image</div>
+  <div class="halfWidth">Your Content or Image 2</div>
 </div>
 ```
 
 Example with downloadable images:
+
 ```html
 <div class="row">
-<div class="halfWidth"><img class="downloadable" src="../img/WhatWeDo.png"></div>
-<div class="halfWidth"><img class="downloadable" src="../img/WhatWeDo.png"></div>
+  <div class="halfWidth">
+    <img class="downloadable" src="../img/WhatWeDo.png" />
+  </div>
+  <div class="halfWidth">
+    <img class="downloadable" src="../img/WhatWeDo.png" />
+  </div>
 </div>
 ```
 
 Three Columns:
+
 ```html
 <div class="row">
-<div class="thirdWidth">Content Col 1</div>
-<div class="thirdWidth">Content Col 2</div>
-<div class="thirdWidth">Content Col 3</div>
+  <div class="thirdWidth">Content Col 1</div>
+  <div class="thirdWidth">Content Col 2</div>
+  <div class="thirdWidth">Content Col 3</div>
 </div>
 ```
 
 Example with captioned downloadable images:
 (note, the br tag in the descriptions are only to give the description texts some offset, they are not necessary. Use them at your discretion.)
+
 ```html
 <div class="row">
-<div class="thirdWidth"><img class="downloadable" src="../img/photoExamples7.jpg"><p class="descriptionText"><br>The more fun, the better!</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/photoExamples8.jpg"><p class="descriptionText"><br>This closeup shows a community member having fun, and highlights the actual event in detail.</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/photoExamples9.jpg"><p class="descriptionText"><br>A wide shot of trick-or-treating gives us diverse shots to pull from for future materials.</p></div>
+  <div class="thirdWidth">
+    <img class="downloadable" src="../img/photoExamples7.jpg" />
+    <p class="descriptionText"><br />The more fun, the better!</p>
+  </div>
+  <div class="thirdWidth">
+    <img class="downloadable" src="../img/photoExamples8.jpg" />
+    <p class="descriptionText">
+      <br />This closeup shows a community member having fun, and highlights the
+      actual event in detail.
+    </p>
+  </div>
+  <div class="thirdWidth">
+    <img class="downloadable" src="../img/photoExamples9.jpg" />
+    <p class="descriptionText">
+      <br />A wide shot of trick-or-treating gives us diverse shots to pull from
+      for future materials.
+    </p>
+  </div>
+</div>
+```
+
+### Do's and Dont's
+
+Some pages have examples of what you should and shouldn't do. These come with their own CSS classes to highlight the text so it stands out visually.
+
+#### Basic usage
+
+At a basic level, a Do or Dont item just needs to be wrapped in a div with the class dosDonts, and the actual text tag itself needs to have the css class descriptionText and either dos or donts.
+
+See these examples for clarification:
+
+A single DO element below an image.
+
+```html
+<div class="dosDonts">
+  <img src="../img/dosDonts1.jpg" />
+  <p class="descriptionText dos">
+    <strong>DO: </strong>Use DTSB red whenever possible.
+  </p>
+</div>
+```
+
+A single DONT element below an image. Notice the only difference is the class on the p tag.
+
+```html
+<div class="dosDonts">
+  <img src="../img/dosDonts1.jpg" />
+  <p class="descriptionText donts">
+    <strong>DO: </strong>Use DTSB red whenever possible.
+  </p>
+</div>
+```
+
+Three dos/donts in a row.
+
+```html
+<div class="row">
+  <div class="thirdWidth dosDonts">
+    <img class="downloadable" src="../img/dosDonts1.jpg" />
+    <p class="descriptionText dos">
+      <strong>DO: </strong>Use DTSB red whenever possible.
+    </p>
+  </div>
+  <div class="thirdWidth dosDonts">
+    <img class="downloadable" src="../img/dosDonts2.jpg" />
+    <p class="descriptionText dos">
+      <strong>DO: </strong>Use backgrounds tinted with colors from the color
+      palette to spruce up otherwise un-branded images.
+    </p>
+  </div>
+  <div class="thirdWidth dosDonts">
+    <img class="downloadable" src="../img/dosDonts3.jpg" />
+    <p class="descriptionText donts">
+      <strong>DONT: </strong>Use color to convey info.
+    </p>
+  </div>
 </div>
 ```
 
@@ -104,7 +188,7 @@ _WARNING: Error handling for these and other markdown plugins does not currently
 
 #### Adding a single color blurb:
 
-A color blurb requires 3 pieces of information. The name of the color, the hex code, and the RGB code. You must supply all three values or the blurb will fail to render. 
+A color blurb requires 3 pieces of information. The name of the color, the hex code, and the RGB code. You must supply all three values or the blurb will fail to render.
 
 Adding a color blurb to the markdown looks like this:
 
@@ -118,15 +202,15 @@ Notice the formatting of the information that is fed into that module. It always
 - RGB must be seperated with periods NOT SPACES
 - The color name (if more than one word) must be seperated with dashes - NOT SPACES
 - Color Blurbs only accept ONE INPUT. Use multiple modules for multiple blurbs.
-- Each item MUST be seperated by commas, NOT SPACES. 
+- Each item MUST be seperated by commas, NOT SPACES.
 
-Basically, every piece of info fed into the colorBlurb module must be one continuous string with no spaces. 
+Basically, every piece of info fed into the colorBlurb module must be one continuous string with no spaces.
 
 #### Adding a color list:
 
 These lists are for listing larger groups of colors in a table, and can be used to either display primary or secondary colors. The main difference between these and the color blurb module, is that these can accept an infinite amount of colors.
 
-Adding a color list to the markdown looks like this: 
+Adding a color list to the markdown looks like this:
 
 ```md
 {@colorTable: #FABF2F,250.191.47,Lightning-Yellow&#2A3593,42.53.147,Bay-Blue&#9F29AE,159.41.174,Grape-Soda&#8BC14C,139.193.76,Sushi&#1965BF,25.101.191,Denim}
@@ -134,15 +218,15 @@ Adding a color list to the markdown looks like this:
 
 Here is a breakdown to make this easier to decipher:
 
-This color table module can accept as many colors as are fed into it. The input works the exact same as the colorBlurb module, but each color is seperated with the & character. 
-The syntax for this module must always follow this pattern: **hexcode,rgb,colorname&hexcode,rgb,colorname&hexcode,rgb,colorname.....** and so on, for as many colors as you need to add. 
+This color table module can accept as many colors as are fed into it. The input works the exact same as the colorBlurb module, but each color is seperated with the & character.
+The syntax for this module must always follow this pattern: **hexcode,rgb,colorname&hexcode,rgb,colorname&hexcode,rgb,colorname.....** and so on, for as many colors as you need to add.
 
 Notice these formatting rules still apply:
 
 - Hexcode can be 3 or 6 digit but must include the #.
 - RGB must be seperated with periods NOT SPACES
 - The color name (if more than one word) must be seperated with dashes - NOT SPACES
-- Each individual color item attribute in the table MUST be seperated by commas, NOT SPACES. 
+- Each individual color item attribute in the table MUST be seperated by commas, NOT SPACES.
 - Color tables can accept INFINITE inputs. Each color group of hexcode,rgb,colorname must be seperated with the & character.
 
 The information fed into this module must also be one continuous string with no spaces that follows the rules listed above. It will fail to render if the formatting does not match exactly.
@@ -154,11 +238,12 @@ The information fed into this module must also be one continuous string with no 
 These lists are for listing groups of fonts used in the brand kit. They work similarly to the color tables module, they just accept different info.
 
 Adding a font table to the markdown looks like this:
+
 ```md
 {@fontTable: Open-Sans,Normal,300&Open-Sans,Italic,300&Open-Sans,Normal,400&Open-Sans,Italic,400&Open-Sans,Normal,600&Open-Sans,Italic,600&Open-Sans,Normal,700&Open-Sans,Italic,700&Open-Sans,Normal,800&Open-Sans,Italic,800}
 ```
 
-This would generate a table containing every weight of open sans in the normal and italic styles. 
+This would generate a table containing every weight of open sans in the normal and italic styles.
 
 A breakdown of the input:
 
@@ -178,11 +263,15 @@ Note the following important info as you set up a font table:
 **Including font files:**
 
 You will be mainly using these to display google fonts. The reference to the google font MUST be included at the top of the typography MD file for these to work correctly.
-You must go to google fonts, select the font you want to use, go to the customize tab, select all variations, and then copy the HTML ref link from that box and paste it to the head of the typography page. 
+You must go to google fonts, select the font you want to use, go to the customize tab, select all variations, and then copy the HTML ref link from that box and paste it to the head of the typography page.
 
-The ref link for Open Sans in this example looks like this: 
+The ref link for Open Sans in this example looks like this:
+
 ```html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+  rel="stylesheet"
+/>
 ```
 
 **Including code boxes:**
@@ -206,15 +295,15 @@ A usage box would look like this:
 <pre><code class="language-css">font-family: 'Rock Salt', cursive;</code></pre>
 ```
 
-Just copy this block and paste it below any font tables that need this info displayed. 
-All of the info in each tab was copied directly from the google fonts page for that font. 
+Just copy this block and paste it below any font tables that need this info displayed.
+All of the info in each tab was copied directly from the google fonts page for that font.
 
 ### Additional Info
 
-If something seems confusing, this brand guide has been fully populated with dummy content. You can reference that to figure out how to do most things that are included in this kit. 
+If something seems confusing, this brand guide has been fully populated with dummy content. You can reference that to figure out how to do most things that are included in this kit.
 
 If you are still having trouble, feel free to open an issue and I will try to clear up some documentation!
 
-There are many planned fixes for the future of this project, and a lot of this can be cleaned up, but thats MVP for ya. 
+There are many planned fixes for the future of this project, and a lot of this can be cleaned up, but thats MVP for ya.
 
 Markdown reference guide: [click](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

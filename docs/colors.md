@@ -2,15 +2,18 @@
 id: colors
 title: Colors
 ---
+
 ## Color Palettes
+
+[comment]: <> (Use ndash character for dashes if you need dashes in your color name. – copy this one if you need to use one.)
 
 <h2 class="centeredText">Main Color Palette</h2>
 
 <p class="descriptionText">The colors to be used in all primary communications.</p>
 
-<div class="row"><div class="thirdWidth"> 
+<div class="row"><div class="thirdWidth">
 
-{@colorBlurb: #EDEDED,237.237.237,Clouds}
+{@colorBlurb: #EF3E2D,94.24.18,Pantone-P-45–8-C}
 
 </div><div class="thirdWidth">
 
@@ -33,14 +36,15 @@ title: Colors
 <img class="downloadable" src="../img/fullPalette.jpg">
 
 ## Do's and Dont's
+
 <div class="row">
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts1.jpg"><p class="descriptionText"><strong><br>DO: </strong>Use DTSB red whenever possible.</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts2.jpg"><p class="descriptionText"><strong><br>DO: </strong>Use backgrounds tinted with colors from the color palette to spruce up otherwise un-branded images.</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts3.jpg"><p class="descriptionText"><strong><br>DO: </strong>Carefully use color in typography for additional pop.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts1.jpg"><p class="descriptionText dos"><strong>DO: </strong>Use DTSB red whenever possible.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts2.jpg"><p class="descriptionText dos"><strong>DO: </strong>Use backgrounds tinted with colors from the color palette to spruce up otherwise un-branded images.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts3.jpg"><p class="descriptionText dos"><strong>DO: </strong>Carefully use color in typography for additional pop.</p></div>
 </div>
 
 <div class="row">
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts4.jpg"><p class="descriptionText"><strong><br>DON'T: </strong>Use too many colors.</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts5.jpg"><p class="descriptionText"><strong><br>DON'T: </strong>Use colors for type that blend into the images.</p></div>
-<div class="thirdWidth"><img class="downloadable" src="../img/dosDonts6.jpg"><p class="descriptionText"><strong><br>DO: </strong>Use contrast to create distinct images.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts4.jpg"><p class="descriptionText donts"><strong>DON'T: </strong>Use too many colors.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts5.jpg"><p class="descriptionText donts"><strong>DON'T: </strong>Use colors for type that blend into the images.</p></div>
+<div class="thirdWidth dosDonts"><img class="downloadable" src="../img/dosDonts6.jpg"><p class="descriptionText dos"><strong>DO: </strong>Use contrast to create distinct images.</p></div>
 </div>

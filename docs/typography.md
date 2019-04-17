@@ -22,12 +22,15 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 <h3>Usage:</h3>
 
 **HTML**
+
 <pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"&gt;</code></pre>
 
 **JS IMPORT**
+
 <pre><code class="language-js">@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');</code></pre>
 
 **CSS**
+
 <pre><code class="language-css">font-family: 'Oswald', sans-serif;</code></pre>
 
 {@fontTable: Rock-Salt,Normal,400}
@@ -35,12 +38,15 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 <h3>Usage:</h3>
 
 **HTML**
+
 <pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"&gt;</code></pre>
 
 **JS IMPORT**
+
 <pre><code class="language-js">@import url('https://fonts.googleapis.com/css?family=Rock+Salt');</code></pre>
 
 **CSS**
+
 <pre><code class="language-css">font-family: 'Rock Salt', cursive;</code></pre>
 
 {@fontTable: Prata,Normal,400}
@@ -48,12 +54,15 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 <h3>Usage:</h3>
 
 **HTML**
+
 <pre><code class="language-html">&lt;link href="http://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css"&gt;</code></pre>
 
 **JS IMPORT**
+
 <pre><code class="language-js">@import url('https://fonts.googleapis.com/css?family=Prata');</code></pre>
 
 **CSS**
+
 <pre><code class="language-css">font-family: 'Prata', serif;</code></pre>
 
 ## Body Copy
@@ -63,12 +72,15 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 <h3>Usage:</h3>
 
 **HTML**
+
 <pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"&gt;</code></pre>
 
 **JS IMPORT**
+
 <pre><code class="language-js">@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');</code></pre>
 
 **CSS**
+
 <pre><code class="language-css">font-family: 'Open Sans', sans-serif;</code></pre>
 
 ## Do's and Dont's
@@ -78,8 +90,8 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 - Don’t use the header typefaces for body copy. Use Open Sans for anything longer than 1 line or approx. 10 words.
 
 <div class="row">
-<div class="halfWidth"><img class="downloadable" src="../img/typoDosDonts1.jpg"><p class="descriptionText"><br><strong>DON'T: </strong>Overwhelm your viewers with too much text.</p></div>
-<div class="halfWidth"><img class="downloadable" src="../img/typoDosDonts2.jpg"><p class="descriptionText"><br><strong>DO: </strong>Use simple typographic layouts to convey information clearly.</p></div>
+<div class="halfWidth dosDonts"><img class="downloadable" src="../img/typoDosDonts1.jpg"><p class="descriptionText donts"><strong>DON'T: </strong>Overwhelm your viewers with too much text.</p></div>
+<div class="halfWidth dosDonts"><img class="downloadable" src="../img/typoDosDonts2.jpg"><p class="descriptionText dos"><strong>DO: </strong>Use simple typographic layouts to convey information clearly.</p></div>
 </div>
 
 ## Usage Examples

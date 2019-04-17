@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
-const CompLibrary = require('../../core/CompLibrary.js');
+const CompLibrary = require("../../core/CompLibrary.js");
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
@@ -15,10 +15,10 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
+    const { siteConfig, language = "" } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
@@ -74,8 +74,8 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = "" } = this.props;
+    const { baseUrl } = siteConfig;
 
     const Button = props => (
       <div className="pluginWrapper buttonWrapper">
@@ -84,12 +84,13 @@ class Index extends React.Component {
         </a>
       </div>
     );
-    
+
     const Block = props => (
       <Container
-        padding={['bottom', 'top']}
+        padding={["bottom", "top"]}
         id={props.id}
-        background={props.background}>
+        background={props.background}
+      >
         <GridBlock
           align="center"
           contents={props.children}
@@ -100,13 +101,16 @@ class Index extends React.Component {
 
     const FeatureCallout = () => (
       <div className="blackSection">
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center', position: 'relative'}}>
-        <h2>Our Brandjectives™</h2>
-        <p>What are Brandjectives™?</p>
-        <Button href="docs/brandjectives.html">These are Brandjectives™</Button>
-      </div>
+        <div
+          className="productShowcaseSection paddingBottom"
+          style={{ textAlign: "center", position: "relative" }}
+        >
+          <h2>Our Brandjectives™</h2>
+          <p>What are Brandjectives™?</p>
+          <Button href="docs/brandjectives.html">
+            These are Brandjectives™
+          </Button>
+        </div>
       </div>
     );
 
@@ -114,11 +118,11 @@ class Index extends React.Component {
       <Block id="try">
         {[
           {
-            content: 'Talk about trying this out',
+            content: "Talk about trying this out",
             image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'left',
-            title: 'Try it Out',
-          },
+            imageAlign: "left",
+            title: "Try it Out"
+          }
         ]}
       </Block>
     );
@@ -128,11 +132,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              "This is another description of how this project is useful",
             image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
+            imageAlign: "right",
+            title: "Description"
+          }
         ]}
       </Block>
     );
@@ -141,35 +145,37 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
+            content: "Talk about learning how to use this",
             image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'right',
-            title: 'Learn How',
-          },
+            imageAlign: "right",
+            title: "Learn How"
+          }
         ]}
       </Block>
     );
 
     const Features = () => (
       <div className="blackSection">
-      <Block layout="fourColumn" >
-        {[
-          {
-            content: 'View the J2 color library (spoiler: its mostly black)<br><br><a class="button" href="docs/colors.html">Color Library</a>',
-            image: `${baseUrl}img/color_circle.png`,
-            imageAlign: 'top',
-            imageLink: 'docs/colors.html',
-            title: 'Color Library',
-          },
-          {
-            content: 'View the J2 typography library.<br><br><a class="button" href="docs/typography.html">Typography Library</a>',
-            image: `${baseUrl}img/text-color.png`,
-            imageLink: 'docs/typography.html',
-            imageAlign: 'top',
-            title: 'Typography',
-          },
-        ]}
-      </Block>
+        <Block layout="fourColumn">
+          {[
+            {
+              content:
+                'View the J2 color library (spoiler: its mostly black)<br><br><a class="button" href="docs/colors.html">Color Library</a>',
+              image: `${baseUrl}img/color_circle.png`,
+              imageAlign: "top",
+              imageLink: "docs/colors.html",
+              title: "Color Library"
+            },
+            {
+              content:
+                'View the J2 typography library.<br><br><a class="button" href="docs/typography.html">Typography Library</a>',
+              image: `${baseUrl}img/text-color.png`,
+              imageLink: "docs/typography.html",
+              imageAlign: "top",
+              title: "Typography"
+            }
+          ]}
+        </Block>
       </div>
     );
 
@@ -186,7 +192,7 @@ class Index extends React.Component {
           </a>
         ));
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+      const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
 
       return (
         <div className="productShowcaseSection usersSection paddingBottom">
@@ -194,7 +200,7 @@ class Index extends React.Component {
           <p>The J2 Brand Kit System is used by:</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
+            <a className="button" href={pageUrl("users.html")}>
               More {siteConfig.title} Users
             </a>
           </div>
@@ -205,7 +211,7 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
+        <div className="mainContainer noPaddingTop">
           <Features />
           <FeatureCallout />
           {/*<LearnHow />*/}
