@@ -17,7 +17,7 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 
 [comment]: <> (For all font tables, make sure that you have loaded the source files from google fonts into the section above.)
 
-{@fontTable: Oswald,Normal,200&Oswald,Normal,300&Oswald,Normal,400&Oswald,Normal,500&Oswald,Normal,600&Oswald,Normal,700}
+{@fontTable: Oswald,Normal,200|Oswald,Normal,300|Oswald,Normal,400|Oswald,Normal,500|Oswald,Normal,600|Oswald,Normal,700}
 
 <h3>Usage:</h3>
 
@@ -67,7 +67,7 @@ Clarity in information is key. For any body copy, use standard body copy text. F
 
 ## Body Copy
 
-{@fontTable: Open-Sans,Normal,300&Open-Sans,Italic,300&Open-Sans,Normal,400&Open-Sans,Italic,400&Open-Sans,Normal,600&Open-Sans,Italic,600&Open-Sans,Normal,700&Open-Sans,Italic,700&Open-Sans,Normal,800&Open-Sans,Italic,800}
+{@fontTable: Open-Sans,Normal,300|Open-Sans,Italic,300|Open-Sans,Normal,400|Open-Sans,Italic,400|Open-Sans,Normal,600|Open-Sans,Italic,600|Open-Sans,Normal,700|Open-Sans,Italic,700|Open-Sans,Normal,800|Open-Sans,Italic,800}
 
 <h3>Usage:</h3>
 

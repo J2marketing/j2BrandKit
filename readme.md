@@ -262,6 +262,8 @@ Note the following important info as you set up a font table:
 
 **Including font files:**
 
+If your font has a dash in the actual name, use the unicode character for dash &#45;
+
 You will be mainly using these to display google fonts. The reference to the google font MUST be included at the top of the typography MD file for these to work correctly.
 You must go to google fonts, select the font you want to use, go to the customize tab, select all variations, and then copy the HTML ref link from that box and paste it to the head of the typography page.
 
