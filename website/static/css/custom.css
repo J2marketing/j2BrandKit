@@ -66,6 +66,10 @@ a {
 }
 
 /*Customizations for home page*/
+.blackSection h2 p {
+  font-size: 30px;
+}
+
 .projectTitle {
   color: #333;
 }
